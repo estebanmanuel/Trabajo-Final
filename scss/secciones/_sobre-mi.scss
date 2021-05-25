@@ -1,0 +1,198 @@
+/*SOBRE MI*/
+
+#sobreMi {
+    line-height: 2.3;
+    background-color: $fondoGris;
+
+    main {
+        margin: 15px;
+        width: 100vw;
+        display: flex;
+
+        div.oculta{
+            display: none;
+        }
+
+        img.img-sobremi {
+            max-height: 100%;
+            width: 46rem;
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+
+        div.columna-2 {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+
+            .texto-breve,
+            .texto-aunmasbreve {
+                text-align: center;
+                font-size: $textoImportante;
+                line-height: 2rem;
+                max-width: 42rem;
+                margin: 15px auto;
+                border-radius: 10px;
+                padding: 20px;
+            }
+
+
+            .cards {
+                display: flex;
+                justify-content: space-evenly;
+
+                .card {
+                    background-color: silver;
+                    text-align: center;
+                    max-width: 22rem;
+                    max-height: 32rem;
+                    padding: 25px;
+
+                    h3 {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Media Querys
+
+/*XL*/
+@media (min-width: 993px) and (max-width: 1499px) {
+    #sobreMi main {
+        div.oculta{
+            display: none;
+        }
+        img.img-sobremi {
+            width: 25rem;
+            height: 100%;
+        }
+
+        div.columna-2 {
+
+            .texto-breve,
+            .texto-aunmasbreve {
+                font-size: 1rem;
+                margin: 0 auto;
+                padding-bottom: 0;
+            }
+
+            .cards {
+                .card {
+                    max-width: 15rem;
+
+                    p {
+                        font-size: .8rem;
+                    }
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*L*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #sobreMi main {
+        flex-direction: column;
+        div.oculta{
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        img.img-sobremi {
+            width: 25rem;
+            padding-top: 0;
+        }
+        div.columna-2 {
+            width: 80%;
+            div.texto-breve{
+                display: none;
+            }
+            .cards {
+                margin-top: 2%;
+                .card {
+                    max-width: 19rem;
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*S*/
+@media (min-width: 577px) and (max-width: 768px) {
+    #sobreMi main{
+        flex-direction: column;
+        div.oculta{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 90%;
+        }
+        img.img-sobremi{
+            width: 30rem;
+        }
+        div.columna-2{
+            width: 90%;
+            padding-top: 2%;
+            div.texto-breve{
+                display: none;
+            }
+            .cards{
+                .card{
+                    max-width: 15rem;
+                    max-height: 37rem;
+                    padding: 2%;
+                }
+            }
+        }
+    }
+}
+
+/*XS*/
+@media screen and (max-width: 576px) {
+    #sobreMi main{
+        flex-direction: column;
+        max-width: 90vw;
+
+        div.oculta{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 90vw;
+        }
+        img.img-sobremi{
+            max-width: 90vw;
+        }
+        div.columna-2{
+            width: 90vw;
+            padding-top: 2%;
+            div.texto-breve{
+                display: none;
+            }
+            .cards{
+                flex-direction: column;
+                margin: 0 auto;
+
+                .card{
+                    max-height: 47rem;
+                    margin-top: 6%;
+                }
+            }
+        }
+    }
+}

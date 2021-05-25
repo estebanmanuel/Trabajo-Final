@@ -1,0 +1,26 @@
+
+
+//Las variables siempre van arriba de todo
+@import 'variables/colores';
+@import 'variables/tamanios';
+@import 'variables/tipografia';
+
+//Secciones
+@import 'secciones/index';
+@import 'secciones/sobre-mi';
+@import 'secciones/submenu-fotos';
+@import 'secciones/submenu-videos';
+@import 'secciones/contacto';
+@import 'secciones/footer';
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body {
+        background-color: #E4EEF4;
+    }
+}
+
+
